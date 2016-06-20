@@ -1,0 +1,9 @@
+LamportMutex
+2 0 0 0 <0.0> LamportMutex.requestCS()
+6 0 0 0 <1.0> Process.receiveMsg(1 0 request 2#[class Msg])
+9 3 0 0 <2.0> Process.receiveMsg(2 0 ack 3#[class Msg])
+11 3 4 0 <2.0> Process.receiveMsg(3 0 ack 4#[class Msg])
+13 5 4 7 <2.0> Process.receiveMsg(1 0 ack 3#[class Msg])
+15 8 4 7 <3.0> LamportMutex.releaseCS()
+19 8 4 7 <4.3> Process.receiveMsg(3 0 request 5#[class Msg])
+22 8 4 10 <5.3> Process.receiveMsg(1 0 release 9#[class Msg])

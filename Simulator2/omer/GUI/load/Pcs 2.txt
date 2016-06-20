@@ -1,0 +1,6 @@
+LamportMutex
+0 0 2 0 <1.0> Process.receiveMsg(0 2 request 2#[class Msg])
+4 0 5 0 <1.0> Process.receiveMsg(1 2 request 2#[class Msg])
+4 4 8 0 <3.0> Process.receiveMsg(3 2 request 5#[class Msg])
+5 5 11 12 <4.0> Process.receiveMsg(0 2 release 6#[class Msg])
+17 8 13 12 <5.3> Process.receiveMsg(1 2 release 9#[class Msg])

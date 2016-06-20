@@ -1,0 +1,53 @@
+
+Procedure:
+----------
+
+1) Open the Symbols.java file and change the nameServer, on line 4, to the address of the
+   machine you will be running the name sever or if your running it one the same machine as the
+   algorithm then change it to "localhost" for example:
+
+        public static final String nameServer = "localhost";
+
+2) For each process there should be a file that contains all the neighbors of that process. The
+   file name has to follow this format, "topology#", where the # is replaced by the process
+   ID to which this file belongs.
+	
+	Example,
+
+		File name: topology2
+
+		File contains: 0 1 5 6
+
+   This shows that process two's neighbors are 0, 1, 5, and 6.
+
+3) Open a terminal and compile NameTable.java, NameServer.java, and LockTester.java. 
+
+4) In a new terminal window run the Name Server by typing, 
+		
+	java NameServer
+   
+    then for each process open a different terminal and start the algorithm by typing,
+
+	java LockTester <base name> <ID> <NumProc> <Algorithm>
+
+    base name - just a name for this simulation
+    ID - Id of this process, the first process should have Id=0
+    NumProc - Number of processes in this simulation
+    Algorithm - Which algorithm to run, for
+			Lamport, type LamportMutex
+			Ricart and Agrawala, type RicartAgrawala
+			Dining Philosopher, type DiningPhil
+			Token-Based, type CircToken
+
+    Example: java LockTester TokenBased 0 4 CircToken
+
+    If you are using xterm, you can start multiple terminals as follows
+ 
+
+xterm -sb -ls -T P0 -e java LockTester mutexLamport 0 3 LamportMutex &
+xterm -sb -ls -T P1 -e java LockTester mutexLamport 1 3 LamportMutex &
+xterm -sb -ls -T P2 -e java LockTester mutexLamport 2 3 LamportMutex &
+
+
+Alternatively, run the script file Mutex.csh with the argument LamportMutex as follows:
+./Mutex.csh LamportMutex

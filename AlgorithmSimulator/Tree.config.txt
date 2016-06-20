@@ -1,0 +1,50 @@
+/*************
+**Span Tree Algo
+***************/
+{
+
+*** Set Width height***
+
+width 1
+height 1
+
+**** Example  width 3 height 2:
+**Superposed 3 classes independent of each other -- each incoming msg goes to 
+* each of 1a 1b and 1c
+*   1a   1b   1c 
+*   |     |    |
+*   V     V    V  
+*   2a   2b   2c     
+
+****  Display Name ***
+classDisplayName Asynchronous tree construction
+
+startClass 1 1
+className Tree
+numberOfMethods 1
+numberOfFields 2
+
+****Methods******
+method 1 initiate
+***method 2 debug
+
+******Fields*****
+field 1 parent
+field 2 level
+
+****field 2 wantCS
+
+set root 0
+
+****Node Color Info*****
+colorMethod getColor
+*** Color Method return type - Boolean Integer *****
+colorType Integer 
+
+*Linker Info *
+linkerName Linker
+}
+
+***** End ********/
+
+

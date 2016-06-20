@@ -1,0 +1,48 @@
+/**************
+DSTerm Algo
+**************
+{
+
+*** Set Width height***
+
+width 1
+height 1
+
+**** Example  width 3 height 2:
+**Superposed 3 classes independent of each other -- each incoming msg goes to 
+* each of 1a 1b and 1c
+*   1a   1b   1c 
+*   |     |    |
+*   V     V    V  
+*   2a   2b   2c     
+
+****  Display Name ***
+classDisplayName Termination: Dijkstra Scholten
+
+startClass 1 1
+className TermShortestPath
+numberOfMethods 1
+numberOfFields 1
+
+****Methods******
+method 1 initiate
+***method 2 debug
+
+******Fields*****
+field 1 parent
+****field 2 wantCS
+
+set algoCode 0
+
+****Node Color Info*****
+colorMethod newOkayCS
+*** Color Method return type - Boolean Integer *****
+colorType Boolean 
+
+*Linker Info *
+linkerName Linker
+}
+
+***** End ********/
+
+

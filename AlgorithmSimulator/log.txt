@@ -1,0 +1,24 @@
+6 6
+Node 0Instantiation  Done
+6 6
+Node 1Instantiation  Done
+6 6
+Node 2Instantiation  Done
+6 6
+Node 3Instantiation  Done
+6 6
+Node 4Instantiation  Done
+6 6
+Node 5Instantiation  Done
+ Node : 0 is in CS ...... yipeeee
+ Node : 1 is in CS ...... yipeeee
+ Node : 2 is in CS ...... yipeeee
+ Node : 3 is in CS ...... yipeeee
+ Node : 4 is in CS ...... yipeeee
+ Node : 5 is in CS ...... yipeeee
+ Node : 0 is in CS ...... yipeeee
+ Node : 1 is in CS ...... yipeeee
+ Node : 2 is in CS ...... yipeeee
+ Node : 3 is in CS ...... yipeeee
+ Node : 4 is in CS ...... yipeeee
+ Node : 5 is in CS ...... yipeeee
